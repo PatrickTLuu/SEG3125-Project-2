@@ -1,0 +1,13 @@
+.footer {
+    padding: 1% 0 1% 0;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.pill {
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
