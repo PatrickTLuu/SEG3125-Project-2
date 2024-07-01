@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Baskervville+SC');
 
+.navigation-bar {
+    padding: 0 0 0 0;
+}
+
 .dropdown-toggle {
     color: white;
     font-size: xx-large;
 }
 
 .dropdown-toggle:hover {
+    color: white;
+    font-size: xx-large;
+}
+
+.dropdown-toggle:focus {
     color: white;
     font-size: xx-large;
 }
