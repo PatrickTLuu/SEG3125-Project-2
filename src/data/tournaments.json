@@ -1,9 +1,80 @@
-{
-    "name": "Super Mario Party Tournament",
-    "src": "resources/SuperMarioParty.jpg",
-    "datetime": "June 20, 2024 @ 10:30pm",
-    "location": "Ottawa",
-    "level": "Intermediate",
-    "genres": ["Racing", "Family Friendly"],
-    "description": "Join us in Ottawa for a  beginner Mario Kart tournament. Have some fun with others in a friendly environment"
-}
+[
+    {
+        "id": 1,
+        "name": "Super Mario Party Tournament",
+        "src": "resources/SuperMarioParty.jpg",
+        "date": "August 20, 2024",
+        "time": "13:00",
+        "location": "Ottawa",
+        "level": "Beginner",
+        "genres": [
+            "Party",
+            "Family Friendly"
+        ],
+        "description": "Join us in Ottawa for a beginner Mario party tournament. Have some fun with others in a friendly environment"
+    },
+    {
+        "id": 2,
+        "name": "Mario Kart 8 Tournament",
+        "src": "resources/MarioKart8.jpg",
+        "date": "August 15, 2024",
+        "time": "13:00",
+        "location": "Ottawa",
+        "level": "Intermediate",
+        "genres": [
+            "Racing",
+            "Family Friendly"
+        ],
+        "description": "Join us in Ottawa for an intermediate Mario Kart tournament. Have some fun with others in a friendly environment"
+    },
+    {
+        "id": 3,
+        "name": "Super Smash Bros Ultimate",
+        "src": "resources/SuperSmashBrosUltimate.jpg",
+        "date": "August 20, 2024",
+        "time": "16:00",
+        "location": "Toronto",
+        "level": "Expert",
+        "genres": ["Fighting"],
+        "description": "Join us in Toronto for an expert Super Smash Bros Ultimate tournament. Have some fun with others in a friendly environment"
+    },
+    {
+        "id": 4,
+        "name": "Super Mario Party Tournament 2",
+        "src": "resources/SuperMarioParty.jpg",
+        "date": "August 25, 2024",
+        "time": "15:30",
+        "location": "Ottawa",
+        "level": "Beginner",
+        "genres": [
+            "Party",
+            "Family Friendly"
+        ],
+        "description": "Join us in Ottawa for a beginner Mario party tournament. Have some fun with others in a friendly environment"
+    },
+    {
+        "id": 5,
+        "name": "Mario Kart 8 Tournament 2",
+        "src": "resources/MarioKart8.jpg",
+        "date": "August 17, 2024",
+        "time": "15:30",
+        "location": "Ottawa",
+        "level": "Intermediate",
+        "genres": [
+            "Racing",
+            "Family Friendly"
+        ],
+        "description": "Join us in Ottawa for an intermediate Mario Kart tournament. Have some fun with others in a friendly environment"
+    },
+    {
+        "id": 6,
+        "name": "Super Smash Bros Ultimate 2",
+        "src": "resources/SuperSmashBrosUltimate.jpg",
+        "date": "August 25, 2024",
+        "time": "09:00",
+        "location": "Toronto",
+        "level": "Expert",
+        "genres": ["Fighting"],
+        "description": "Join us in Toronto for an expert Super Smash Bros Ultimate tournament. Have some fun with others in a friendly environment"
+    }
+]
