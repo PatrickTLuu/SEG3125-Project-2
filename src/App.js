@@ -1,31 +1,23 @@
-import './App.css';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import Entry from './components/Entry';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import CreateTournament from "./pages/CreateTournament";
+import ViewTournaments from "./pages/ViewTournaments";
+import PostTrade from "./pages/PostTrade";
+import ViewTrades from "./pages/ViewTrades";
 
 
 function App() {
   return (
-    <div>
-      <Header/>
-      <Row>
-        <Col>
-        <Entry src="resources/SuperMarioParty.jpg" name="Mario" datetime="June 01, 2024 @ 10pm" location="Ottawa" level="Intermediate"></Entry>
-        </Col>
-        <Col>
-        <Entry src="resources/SuperMarioParty.jpg" name="Mario" datetime="June 01, 2024 @ 10pm" location="Ottawa" level="Intermediate"></Entry>
-        </Col>
-        <Col>
-        <Entry src="resources/SuperMarioParty.jpg" name="Mario" datetime="June 01, 2024 @ 10pm" location="Ottawa" level="Intermediate"></Entry>
-        </Col>
-      </Row>
-      <Footer 
-        label={"Can’t find a tournament? Create your own!"}
-        btnMsg={"Create a tournament"}
-        colour={"blue"}
-        href={"."}
-      />
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path="" element={<Home />}></Route>
+      <Route path="create_tournament" element={<CreateTournament />} />
+      <Route path="view_tournaments" element={<ViewTournaments />} />
+      <Route path="post_trade" element={<PostTrade />} />
+      <Route path="view_trades" element={<ViewTrades />} />
+      <Route path="*" element={<Home />} />
+    </Routes>
+  </BrowserRouter>
   );
 }
 
