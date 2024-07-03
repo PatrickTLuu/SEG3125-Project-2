@@ -7,6 +7,7 @@ import Entry from '../components/Entry';
 import Tournaments from '../data/tournaments.json'
 import { useState } from 'react';
 import EntryModal from '../components/EntryModal';
+import Multiselect from '../components/Multiselect';
 
 const times = [
     "00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00",
@@ -60,10 +61,21 @@ export default function ViewTournaments() {
                     <option>{time}</option>
                 ))}
             </Form.Select>
-            
-            <Col>
 
+            <Col lg={1}></Col>
+            
+            <Col lg={2}>
+                <Multiselect type="genres"></Multiselect>
             </Col>
+
+            <Col lg={2}>
+                <Multiselect type="locations"></Multiselect>
+            </Col>
+
+            <Col lg={2}>
+                <Multiselect type="levels"></Multiselect>
+            </Col>
+
         </Row>
 
         <Row>

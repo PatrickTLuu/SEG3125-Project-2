@@ -1,0 +1,30 @@
+.option-dropdown {
+    margin-left: 5%;
+}
+
+.option-toggle {
+    border: black solid 1px;
+    color: black;
+    font-size: large;
+}
+
+.option-toggle:hover {
+    border: black solid 1px;
+    color: black;
+    font-size: large;
+}
+
+.option-toggle:focus {
+    border: black solid 1px;
+    color: black;
+    font-size: large;
+}
+
+.option-check {
+    font-size: larger;
+    margin-left: 5%;
+}
+
+.form-check-input {
+    outline: black solid 1px;
+}
