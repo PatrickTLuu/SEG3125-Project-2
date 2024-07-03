@@ -1,0 +1,78 @@
+[
+    {
+        "id": 1,
+        "name": "Super Mario Party",
+        "src": "resources/SuperMarioParty.jpg",
+        "date": "Aug 20th, 2024",
+        "time": "23:59",
+        "location": "Ottawa",
+        "genres": [
+            "Party",
+            "Family Friendly"
+        ],
+        "description": "Game has never been played and the case is still wrapped in its original plastic."
+    },
+    {
+        "id": 2,
+        "name": "Mario Kart 8",
+        "src": "resources/MarioKart8.jpg",
+        "date": "Aug 20th, 2024",
+        "time": "23:59",
+        "location": "Ottawa",
+        "genres": [
+            "Racing",
+            "Family Friendly"
+        ],
+        "description": "Game has never been played and the case is still wrapped in its original plastic."
+    },
+    {
+        "id": 3,
+        "name": "Super Smash Bros Ultimate",
+        "src": "resources/SuperSmashBrosUltimate.jpg",
+        "date": "Aug 20th, 2024",
+        "time": "23:59",
+        "location": "Ottawa",
+        "genres": [
+            "Fighting"
+        ],
+        "description": "Game has never been played and the case is still wrapped in its original plastic."
+    },
+    {
+        "id": 4,
+        "name": "Super Mario Party",
+        "src": "resources/SuperMarioParty.jpg",
+        "date": "Aug 20th, 2024",
+        "time": "23:59",
+        "location": "Ottawa",
+        "genres": [
+            "Party",
+            "Family Friendly"
+        ],
+        "description": "Game has never been played and the case is still wrapped in its original plastic."
+    },
+    {
+        "id": 5,
+        "name": "Mario Kart 8",
+        "src": "resources/MarioKart8.jpg",
+        "date": "Aug 20th, 2024",
+        "time": "23:59",
+        "location": "Ottawa",
+        "genres": [
+            "Racing",
+            "Family Friendly"
+        ],
+        "description": "Game has never been played and the case is still wrapped in its original plastic."
+    },
+    {
+        "id": 6,
+        "name": "Super Smash Bros Ultimate",
+        "src": "resources/SuperSmashBrosUltimate.jpg",
+        "date": "Aug 20th, 2024",
+        "time": "23:59",
+        "location": "Ottawa",
+        "genres": [
+            "Fighting"
+        ],
+        "description": "Game has never been played and the case is still wrapped in its original plastic."
+    }
+]
