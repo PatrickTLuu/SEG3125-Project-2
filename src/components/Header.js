@@ -18,7 +18,7 @@ export default function Header() {
     const hideTradesDropdown = () => setShowTrades(false);
 
     return (
-        <div>
+        <div className="header">
             <Row className='text-align-center'>
                 <h2 id="brand-name">Games Central</h2>
             </Row>
@@ -26,15 +26,15 @@ export default function Header() {
                 <Navbar className="justify-content-center navigation-bar" bg="dark" data-bs-theme="dark">
                     <Col onMouseEnter={showTournamentsDropdown} onMouseLeave={hideTournamentsDropdown}>
                         <NavDropdown title="Tournaments" className="text-align-center" show={showTournaments}>
-                            <NavDropdown.Item className="dropdown-item" as={Link} to="create_tournament">Create a tournament</NavDropdown.Item>
-                            <NavDropdown.Item className="dropdown-item" as={Link} to="view_tournaments">View tournaments</NavDropdown.Item>
+                            <NavDropdown.Item className="dropdown-item" as={Link} to="/create_tournament">Create a tournament</NavDropdown.Item>
+                            <NavDropdown.Item className="dropdown-item" as={Link} to="/view_tournaments">View tournaments</NavDropdown.Item>
                         </NavDropdown>
                         <span className="rectangle blue"></span>
                     </Col>
                     <Col onMouseEnter={showTradesDropdown} onMouseLeave={hideTradesDropdown}>
                     <NavDropdown title="Trades" className="text-align-center" show={showTrades}>
-                        <NavDropdown.Item className="dropdown-item" as={Link} to="post_trade">Post a trade request</NavDropdown.Item>
-                        <NavDropdown.Item className="dropdown-item" as={Link} to="view_trades">View trades</NavDropdown.Item>
+                        <NavDropdown.Item className="dropdown-item" as={Link} to="/post_trade">Post a trade request</NavDropdown.Item>
+                        <NavDropdown.Item className="dropdown-item" as={Link} to="/view_trades">View trades</NavDropdown.Item>
                     </NavDropdown>
                     <span className="rectangle green"></span>
                     </Col>
