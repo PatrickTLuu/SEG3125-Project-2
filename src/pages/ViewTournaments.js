@@ -82,13 +82,13 @@ export default function ViewTournaments() {
             {partitions.map(partition => (
                 <Col>
                     {partition.map(entry => (
-                        <Entry id={entry.id} handleOpen={handleOpen}></Entry>
+                        <Entry id={entry.id} handleOpen={handleOpen} type="tournaments"></Entry>
                     ))}
                 </Col>
             ))}
         </Row>
 
-        <EntryModal id={id} show={show} handleClose={handleClose}></EntryModal>
+        <EntryModal id={id} show={show} handleClose={handleClose} type="tournaments" btnMsg="Join"></EntryModal>
 
         <Footer
             label={"Can’t find a tournament? Create your own!"}

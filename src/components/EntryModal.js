@@ -6,9 +6,14 @@ import { Modal } from 'react-bootstrap';
 import { Stack } from 'react-bootstrap';
 import { Badge } from 'react-bootstrap';
 import Tournaments from "../data/tournaments.json"
+import Trades from "../data/trades.json"
 
-const getFromJson = (id) => {
+const getTournamentFromJson = (id) => {
     return Tournaments.find(entry => entry.id == id);
+}
+
+const getTradesFromJson = (id) => {
+  return Trades.find(entry => entry.id == id);
 }
 
 const getLevelBackground = (level) => {
@@ -28,8 +33,21 @@ const getLevelBackground = (level) => {
 }
 
 export default function EntryModal(params) {
-    console.log(params.id);
-    const item = getFromJson(params.id)
+    var item;
+
+    switch (params.type) {
+      case "tournaments":
+        item = getTournamentFromJson(params.id);
+        break;
+
+      case "trades":
+          item = getTradesFromJson(params.id);
+          break;
+    
+      default:
+        break;
+    }
+
     const levelBackground = getLevelBackground(item.level);
 
     return (
@@ -52,7 +70,7 @@ export default function EntryModal(params) {
                         {item.description}
                     </Card.Text>
                     <Card.Footer className="text-align-center">
-                        <Button className="join-button">Join</Button>
+                        <Button className="join-button">{params.btnMsg}</Button>
                     </Card.Footer>
                 </Card.Body>
             </Card>

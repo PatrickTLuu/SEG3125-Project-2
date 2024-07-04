@@ -2,13 +2,31 @@ import "../index.css"
 import "../css/Entry.css"
 import { Card } from 'react-bootstrap';
 import Tournaments from "../data/tournaments.json"
+import Trades from "../data/trades.json"
 
-const getFromJson = (id) => {
+const getTournamentFromJson = (id) => {
     return Tournaments.find(entry => entry.id == id);
 }
 
+const getTradesFromJson = (id) => {
+  return Trades.find(entry => entry.id == id);
+}
+
 export default function Entry(params) {
-    const item = getFromJson(params.id);
+    var item;
+
+    switch (params.type) {
+      case "tournaments":
+        item = getTournamentFromJson(params.id);
+        break;
+
+      case "trades":
+          item = getTradesFromJson(params.id);
+          break;
+    
+      default:
+        break;
+    }
 
     return (
     <div>
