@@ -8,11 +8,7 @@ import Tournaments from '../data/tournaments.json'
 import { useState } from 'react';
 import EntryModal from '../components/EntryModal';
 import Multiselect from '../components/Multiselect';
-
-const times = [
-    "00:00", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00",
-    "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00"
-]
+import Selector from '../components/Selector';
 
 const partitionInto4 = () => {
     var lists = [[], [], [], [], []];
@@ -47,32 +43,31 @@ export default function ViewTournaments() {
     <div>
         <Header/>
         <Row className="default-margin">
-            <Form.Label className="static-text">Time:</Form.Label>
-            <Form.Select column="true" className="selector">
-                {times.map(time => (
-                    <option>{time}</option>
-                ))}
-            </Form.Select>
-
-            <Form.Label className="static-text">to</Form.Label>
-
-            <Form.Select className="selector" column="true">
-                {times.map(time => (
-                    <option>{time}</option>
-                ))}
-            </Form.Select>
-
-            <Col lg={1}></Col>
+            <div className="fit-content">
+                <Form.Label column={true} className="fit-content">Time:</Form.Label>
+            </div>
             
-            <Col lg={2}>
+            <Col>
+                <Selector type="times"></Selector>
+            </Col>
+
+            <div className="fit-content">
+                <Form.Label column={true} className="fit-content">to</Form.Label>
+            </div>
+
+            <Col>
+                <Selector type="times"></Selector>
+            </Col>
+            
+            <Col>
                 <Multiselect type="genres"></Multiselect>
             </Col>
 
-            <Col lg={2}>
+            <Col>
                 <Multiselect type="locations"></Multiselect>
             </Col>
 
-            <Col lg={2}>
+            <Col>
                 <Multiselect type="levels"></Multiselect>
             </Col>
 

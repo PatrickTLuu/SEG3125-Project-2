@@ -1,26 +1,30 @@
 .option-dropdown {
-    margin-left: 5%;
+    width: 100%;
 }
 
 .option-toggle {
+    width: 100%;
     border: black solid 1px;
     color: black;
     font-size: large;
 }
 
 .option-toggle:hover {
+    width: 100%;
     border: black solid 1px;
     color: black;
     font-size: large;
 }
 
 .option-toggle:focus {
+    width: 100%;
     border: black solid 1px;
     color: black;
     font-size: large;
 }
 
 .option-check {
+    width: 100%;
     font-size: larger;
     margin-left: 5%;
 }

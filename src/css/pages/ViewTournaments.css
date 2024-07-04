@@ -2,12 +2,6 @@
     margin: 1% 2% 1% 2%;
 }
 
-.static-text {
+.fit-content {
     width: fit-content;
-    margin-top: 8px;
-}
-
-.selector {
-    width: 10%;
-    border: solid black 1px;
 }
