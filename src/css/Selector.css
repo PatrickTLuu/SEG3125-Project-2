@@ -1,4 +1,13 @@
 .selector {
     width: 100%;
-    border: solid black 1px;
+    border: solid #dee2e6 1px;
+    cursor: pointer;
+}
+
+.selector:hover {
+    background-color: #c6c7c8;
+}
+
+.selector:focus {
+    background-color: #c6c7c8;
 }

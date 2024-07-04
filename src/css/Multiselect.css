@@ -4,21 +4,21 @@
 
 .option-toggle {
     width: 100%;
-    border: black solid 1px;
+    border: #dee2e6 solid 1px;
     color: black;
     font-size: large;
 }
 
 .option-toggle:hover {
     width: 100%;
-    border: black solid 1px;
+    border: #dee2e6 solid 1px;
     color: black;
     font-size: large;
 }
 
 .option-toggle:focus {
     width: 100%;
-    border: black solid 1px;
+    border: #dee2e6 solid 1px;
     color: black;
     font-size: large;
 }
@@ -30,5 +30,5 @@
 }
 
 .form-check-input {
-    outline: black solid 1px;
+    outline: #dee2e6 solid 1px;
 }
