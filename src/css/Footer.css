@@ -10,4 +10,21 @@
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
+    border: none;
+}
+
+.green:hover {
+    background-color: #347c00;
+}
+
+.green:focus {
+    background-color: #347c00;
+}
+
+.blue:hover {
+    background-color: #21648d;
+}
+
+.blue:focus {
+    background-color: #21648d;
 }
