@@ -2,7 +2,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
 import "../index.css"
-import "../css/Footer.css"
+import "../css/components/Footer.css"
 
 export default function Footer(properties) {
     return (

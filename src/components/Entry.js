@@ -1,5 +1,5 @@
 import "../index.css"
-import "../css/Entry.css"
+import "../css/components/Entry.css"
 import { Card } from 'react-bootstrap';
 import Tournaments from "../data/tournaments.json"
 import Trades from "../data/trades.json"

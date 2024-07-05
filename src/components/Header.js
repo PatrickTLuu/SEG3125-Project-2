@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import "../css/Header.css"
+import "../css/components/Header.css"
 import { Link } from 'react-router-dom';
 
 export default function Header() {

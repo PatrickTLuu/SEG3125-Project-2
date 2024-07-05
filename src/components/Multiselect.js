@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Tournaments from "../data/tournaments.json"
 import { Dropdown, Form } from "react-bootstrap";
-import "../css/Multiselect.css"
+import "../css/components/Multiselect.css"
 
 const getAllGenres = () => {
     var genres = [];

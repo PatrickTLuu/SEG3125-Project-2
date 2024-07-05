@@ -1,5 +1,5 @@
 import "../index.css"
-import "../css/EntryModal.css"
+import "../css/components/EntryModal.css"
 import { Card } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
