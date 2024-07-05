@@ -1,0 +1,25 @@
+.title {
+    color: #2D82B7;
+    text-align: center;
+    font-size: 60px;
+}
+
+.margin-top {
+    margin-top: 2%;
+}
+
+.date-input {
+    cursor: pointer;
+}
+
+.date-input:hover {
+    background-color: #c6c7c8;
+}
+
+.pill {
+    width: 25%;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
