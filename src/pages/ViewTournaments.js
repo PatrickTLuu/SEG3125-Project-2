@@ -89,7 +89,7 @@ export default function ViewTournaments() {
             label={"Can’t find a tournament? Create your own!"}
             btnMsg={"Create a tournament"}
             colour={"blue"}
-            href={"."}
+            href={"/create_tournament"}
         />
     </div>
     )

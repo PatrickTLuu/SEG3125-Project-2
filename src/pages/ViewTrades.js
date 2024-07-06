@@ -67,7 +67,7 @@ export default function ViewTrades() {
             label={"Want to trade your own game? Create a trade!"}
             btnMsg={"Post a trade"}
             colour={"green"}
-            href={"."}
+            href={"/post_trade"}
         />
     </div>
     )
