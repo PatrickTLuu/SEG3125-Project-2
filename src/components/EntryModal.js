@@ -1,6 +1,6 @@
 import "../index.css"
 import "../css/components/EntryModal.css"
-import { Card } from 'react-bootstrap';
+import { Card, Row } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
 import { Stack } from 'react-bootstrap';
@@ -57,17 +57,36 @@ export default function EntryModal(params) {
         break;
     }
 
+    const [isLearnMoreClicked, setIsLearnMoreClicked] = useState(false);
+    const [cardText, setCardText] = useState(item.otherDescription);
+    const learnMoreClicked = () => {
+        setCardText(item.gameDescription);
+        setIsLearnMoreClicked(true);
+    }
+    const descriptionClicked = () => {
+        setCardText(item.otherDescription);
+        setIsLearnMoreClicked(false);
+    }
+
     const levelBackground = getLevelBackground(item.level);
 
     return (
         <div>
-            <Modal show={params.show} onHide={params.handleClose}>
+            <Modal show={params.show} onHide={() => {
+                    params.handleClose();
+                    descriptionClicked();
+                }}>
                 <Modal.Header closeButton>
                     <Modal.Title className="align">{item.name}</Modal.Title>
                 </Modal.Header>
                 <Card className="entry-modal">
                     <Card.Img variant="top" src={item.src}/>
-                    <Card.Body>
+                    <Card.Body className="entry-body">
+                        <Row className="justify-content-center">
+                            <Button className="learn-more-btn" variant="none" onClick={learnMoreClicked} hidden={isLearnMoreClicked}>Learn more about the game</Button>
+                            <Button className="learn-more-btn" variant="none" onClick={descriptionClicked} hidden={!isLearnMoreClicked}>Learn more about the tournament</Button>
+
+                        </Row>
                         <Stack direction="horizontal" className="justify-content-center modal-stack" gap={2}>
                             <Badge pill>{item.date} @ {item.time}</Badge>
                             <Badge pill>{item.location}</Badge>
@@ -77,7 +96,7 @@ export default function EntryModal(params) {
                             ))}
                         </Stack>
                         <Card.Text>
-                            {item.description}
+                            {cardText}
                         </Card.Text>
                         <Card.Footer className="text-align-center">
                             <Button onClick={handleOpen} className="join-button">{params.btnMsg}</Button>
