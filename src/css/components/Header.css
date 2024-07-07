@@ -37,6 +37,9 @@
 }
 
 #brand-name {
+    color: black;
+    background-color: white;
+    border: none;
     font-size: 50px;
     font-family: "Baskervville SC";
     margin: .5% 1% .5% 1%;

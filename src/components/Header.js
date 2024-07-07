@@ -5,6 +5,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import "../css/components/Header.css"
 import { Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 
 export default function Header() {
     const [showTournaments, setShowTournaments] = useState(false);
@@ -20,7 +21,7 @@ export default function Header() {
     return (
         <div className="header">
             <Row className='text-align-center'>
-                <h2 id="brand-name">Games Central</h2>
+                <Button id="brand-name" as={Link} to="/">Games Central</Button>
             </Row>
             <Row>
                 <Navbar className="justify-content-center navigation-bar" bg="dark" data-bs-theme="dark">
