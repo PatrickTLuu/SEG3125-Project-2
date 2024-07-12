@@ -5,11 +5,11 @@ import Tournaments from "../data/tournaments.json"
 import Trades from "../data/trades.json"
 
 const getTournamentFromJson = (id) => {
-    return Tournaments.find(entry => entry.id == id);
+    return Tournaments.find(entry => entry.id === id);
 }
 
 const getTradesFromJson = (id) => {
-  return Trades.find(entry => entry.id == id);
+  return Trades.find(entry => entry.id === id);
 }
 
 export default function Entry(params) {

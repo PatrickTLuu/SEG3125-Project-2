@@ -1,6 +1,6 @@
 import '../App.css';
 import '../css/pages/ViewTournaments.css'
-import {Row, Col, Form} from 'react-bootstrap'
+import {Row, Col} from 'react-bootstrap'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Entry from '../components/Entry';
@@ -15,7 +15,7 @@ const partitionInto4 = () => {
 
     Trades.forEach((trade) => {
         lists.at(index).push(trade);
-        if (index == 4) {
+        if (index === 4) {
             index = 0;
         } else {
             index++;
@@ -53,9 +53,9 @@ export default function ViewTrades() {
 
         <Row>
             {partitions.map(partition => (
-                <Col>
+                <Col key={partitions.indexOf(partition)}>
                     {partition.map(entry => (
-                        <Entry id={entry.id} handleOpen={handleOpen} type="trades"></Entry>
+                        <Entry id={entry.id} key={entry.id} handleOpen={handleOpen} type="trades"></Entry>
                     ))}
                 </Col>
             ))}

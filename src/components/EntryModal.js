@@ -11,11 +11,11 @@ import InformationModal from "./InformationModal";
 import { useState } from "react";
 
 const getTournamentFromJson = (id) => {
-    return Tournaments.find(entry => entry.id == id);
+    return Tournaments.find(entry => entry.id === id);
 }
 
 const getTradesFromJson = (id) => {
-  return Trades.find(entry => entry.id == id);
+  return Trades.find(entry => entry.id === id);
 }
 
 const getLevelBackground = (level) => {
@@ -92,7 +92,7 @@ export default function EntryModal(params) {
                             <Badge pill>{item.location}</Badge>
                             <Badge bg={levelBackground} pill>{item.level}</Badge>
                             {item.genres.map(genre => (
-                                <Badge pill>{genre}</Badge>
+                                <Badge key={genre} pill>{genre}</Badge>
                             ))}
                         </Stack>
                         <Card.Text>
