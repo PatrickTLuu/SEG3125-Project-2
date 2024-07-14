@@ -24,8 +24,11 @@ export default function Multiselect(params) {
     const handleOptionClick = (option) => {
         if (selected.includes(option)) {
             setSelected(selected.filter((item) => item !== option));
+            params.handlechange(params.type, selected.filter((item) => item !== option));
         } else {
             setSelected([...selected, option]);
+            params.handlechange(params.type, [...selected, option]);
+
         }
     };
     
@@ -61,6 +64,7 @@ export default function Multiselect(params) {
                             label={option}
                             className="option-check"
                             id={option}
+                            key={options.indexOf(option)}
                             checked={selected.includes(option)}
                             onChange={() => handleOptionClick(option)}
                             />
@@ -70,4 +74,4 @@ export default function Multiselect(params) {
             </Dropdown>
         </div>
     );
-}; 
+}
