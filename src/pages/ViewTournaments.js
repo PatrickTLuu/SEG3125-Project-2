@@ -9,22 +9,7 @@ import { useEffect, useState } from 'react';
 import EntryModal from '../components/EntryModal';
 import Multiselect from '../components/Multiselect';
 import Selector from '../components/Selector';
-
-const partitionInto4 = (list) => {
-    var lists = [[], [], [], [], []];
-    var index = 0;
-
-    list.forEach((tournament) => {
-        lists.at(index).push(tournament);
-        if (index === 4) {
-            index = 0;
-        } else {
-            index++;
-        }
-    });
-
-    return lists;
-}
+import { partitionInto4 } from '../utils/Partition';
 
 const getTournaments = (filters) => {
     const filtered = Tournaments.filter(tournament => {
