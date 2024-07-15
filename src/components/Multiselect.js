@@ -3,6 +3,8 @@ import Tournaments from "../data/tournaments.json"
 import { Dropdown, Form } from "react-bootstrap";
 import "../css/components/Multiselect.css"
 
+const levels = ["Beginner", "Intermediate", "Expert"];
+
 const getAllGenres = () => {
     var genres = [];
     Tournaments.forEach(tournament => { genres = genres.concat(tournament.genres) })
@@ -13,10 +15,6 @@ const getAllLocations = () => {
     var locations = [];
     Tournaments.forEach(tournament => { locations.push(tournament.location) })
     return [...new Set(locations)];
-}
-
-const getAllLevels = () => {
-    return ["Beginner", "Intermediate", "Expert"];
 }
 
 export default function Multiselect(params) {
@@ -43,7 +41,7 @@ export default function Multiselect(params) {
             break;
 
         case "levels":
-            options = getAllLevels();
+            options = levels;
             break;
     
         default:

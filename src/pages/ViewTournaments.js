@@ -14,8 +14,8 @@ import { partitionInto4 } from '../utils/Partition';
 const getTournaments = (filters) => {
     const filtered = Tournaments.filter(tournament => {
         const tournamentTime = new Date("1/1/1970 " + tournament.time);
-        const startTime = new Date("1/1/1970 " + filters.timesStart);
-        const endTime = new Date("1/1/1970 " + filters.timesEnd);
+        const startTime = filters.timesStart === "--:--" ? new Date("1/1/1970 00:00") : new Date("1/1/1970 " + filters.timesStart);
+        const endTime = filters.timesEnd === "--:--" ? new Date("1/1/1970 23:00") : new Date("1/1/1970 " + filters.timesEnd);
         
         if (tournamentTime < startTime || tournamentTime > endTime) {
             return false;
