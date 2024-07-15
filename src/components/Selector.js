@@ -20,7 +20,7 @@ export default function Selector(params) {
         case "timesStart":
             options = times;
             break;
-        
+
         case "timesEnd":
             options = times;
             break;
@@ -36,15 +36,26 @@ export default function Selector(params) {
         case "levels":
             options = levels;
             break;
-            
+
         default:
             break;
     }
 
-    return (
-        <Form.Select column="true" className="selector" onChange={(e) => params.handlechange(params.type, e.target.value)}>
-            {options.map(option => (
-                <option key={option}>{option}</option>
-            ))}
-        </Form.Select>)
+    switch (params.use) {
+        case "form":
+            return (
+                <Form.Select column="true" className="selector" onChange={params.onChange} onBlur={params.onBlur} ref={params.ref} checked={params.checked}>
+                    {options.map(option => (
+                        <option key={option}>{option}</option>
+                    ))}
+                </Form.Select>)
+
+        default:
+            return (
+                <Form.Select column="true" className="selector" onChange={(e) => params.handlechange(params.type, e.target.value)}>
+                    {options.map(option => (
+                        <option key={option}>{option}</option>
+                    ))}
+                </Form.Select>)
+    }
 }

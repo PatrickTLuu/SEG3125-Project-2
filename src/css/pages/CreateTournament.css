@@ -8,6 +8,14 @@
     margin-top: 2%;
 }
 
+.margin-bottom {
+    margin-bottom: 2%;
+}
+
+.form-text {
+    color: red;
+}
+
 .date-input {
     cursor: pointer;
 }
