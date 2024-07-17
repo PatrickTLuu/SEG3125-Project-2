@@ -68,12 +68,12 @@ export default function ViewTournaments() {
     }
     const TournamentList = () => {
         if (tournaments.at(0).length === 0) {
-            return <Row className="text-align-center">
+            return <Row className="text-align-center margin-bottom">
                 <h1 className="header-text">No tournaments found</h1>
             </Row>
     
         } else {
-            return <Row>
+            return <Row className="margin-bottom">
                 {tournaments.map(partition => (
                     <Col key={tournaments.indexOf(partition)}>
                         {partition.map(entry => (
