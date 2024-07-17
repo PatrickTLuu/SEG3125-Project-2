@@ -2,89 +2,146 @@
     {
         "id": 1,
         "name": "Super Mario Party Tournament",
+        "videoGame": "Super Mario Party",
         "src": "resources/SuperMarioParty.jpg",
         "date": "August 20, 2024",
-        "time": "13:00",
+        "time": "09:00",
         "location": "Ottawa",
         "level": "Beginner",
+        "maxPlayers": "12",
+        "duration": "2h",
         "genres": [
             "Party",
             "Family Friendly"
         ],
-        "otherDescription": "Join us in Ottawa for a beginner Mario party tournament. Have some fun with others in a friendly environment",
+        "tournamentDescription": "Join us in Ottawa for a beginner Mario party tournament. Have some fun with others in a friendly environment",
         "gameDescription": "Turn the tables on opponents as you race across the board to collect the most stars in the original four-player Mario Party series board game mode—now with newly-added online play. Join the full-on frenzy with friends and family! Party it up with 80 minigames Whether you're pedaling tricycles, flipping meat, or who knows what else, you'll use Joy-Con™ controllers in clever ways across 80 wild minigames. Some are all-out free-for-alls, others are 2 vs 2, or even 1 vs 3"
     },
     {
         "id": 2,
         "name": "Mario Kart 8 Tournament",
+        "videoGame": "Mario Kart 8 Deluxe",
         "src": "resources/MarioKart8.jpg",
         "date": "August 15, 2024",
         "time": "13:00",
         "location": "Ottawa",
         "level": "Intermediate",
+        "maxPlayers": "8",
+        "duration": "1.5h",
         "genres": [
             "Racing",
             "Family Friendly"
         ],
-        "otherDescription": "Join us in Ottawa for an intermediate Mario Kart tournament. Have some fun with others in a friendly environment",
+        "tournamentDescription": "Join us in Ottawa for an intermediate Mario Kart tournament. Have some fun with others in a friendly environment",
         "gameDescription": "Burn rubber across Mushroom Kingdom raceways—underwater, in the sky, upside-down in zero-g, and past the finish—for the win! Get revved up for local multiplayer*, online** in-game tournaments, a revamped battle mode, and more! Stay fresh in the Mario Kart™ 8 Deluxe game by playing as guest characters Inkling Girl and Inkling Boy! You can use their Splatoon inspired karts on their battle mode stage, Urchin Underpass. There are also returning items, like Boo, the item-stealing ghost, and the Feather, used exclusively in battle mode. Veterans rejoice—you can hold two items at once! Prove you're the world's best racer and battler in online tournaments, or simply race and battle friends online. With many control options and handheld mode, there's always a way to play on the Nintendo Switch™ system!"
     },
     {
         "id": 3,
         "name": "Super Smash Bros Ultimate",
+        "videoGame": "Super Smash Bros Ultimate",
         "src": "resources/SuperSmashBrosUltimate.jpg",
         "date": "August 20, 2024",
         "time": "16:00",
         "location": "Toronto",
         "level": "Expert",
+        "maxPlayers": "8",
+        "duration": "3h",
         "genres": [
+            "Action",
+            "Family Friendly",
             "Fighting"
         ],
-        "otherDescription": "Join us in Toronto for an expert Super Smash Bros Ultimate tournament. Have some fun with others in a friendly environment",
+        "tournamentDescription": "Join us in Toronto for an expert Super Smash Bros Ultimate tournament. Have some fun with others in a friendly environment",
         "gameDescription": "Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K. Rool join Inkling, Ridley, and every fighter in Super Smash Bros. history. Enjoy enhanced speed and combat at new stages based on the Castlevania series, Super Mario Odyssey, and more! Having trouble choosing a stage? Then select the Stage Morph option to transform one stage into another while battling—a series first! Plus, new echo fighters Dark Samus, Richter Belmont, and Chrom join the battle. Whether you play locally or online, savor the faster combat, new attacks, and new defensive options, like a perfect shield. Jam out to 900 different music compositions and go 1-on-1 with a friend, hold a 4-player free-for-all, kick it up to 8-player battles and more! Feel free to bust out your GameCube controllers—legendary couch competitions await—or play together anytime, anywhere!"
     },
     {
         "id": 4,
+        "name": "Chained Together",
+        "src": "resources/SuperSmashBrosUltimate.jpg",
+        "date": "August 20, 2024",
+        "time": "18:00",
+        "location": "Toronto",
+        "level": "Expert",
+        "maxPlayers": "8",
+        "duration": "5h",
+        "genres": [
+            "Adventure",
+            "Platformer"
+        ],
+        "tournamentDescription": "Do you enjoy difficult platforming games? Want to work with other expert platformers or compete against them? Join us in Toronto for various tournaments of Chained Together.",
+        "gameDescription": "Dive into the epic adventure of 'Chained Together' Begin your journey in the depths of hell, chained to your companions. Your mission is to escape hell by climbing as high as possible. Each jump requires perfect coordination to scale the platforms and escape the scorching heat. Traverse a multitude of worlds, each offering unique challenges."
+    },
+    {
+        "id": 5,
         "name": "Super Mario Party Tournament 2",
+        "videoGame": "Super Mario Party",
         "src": "resources/SuperMarioParty.jpg",
         "date": "August 25, 2024",
-        "time": "15:30",
+        "time": "10:00",
         "location": "Ottawa",
-        "level": "Beginner",
+        "level": "Intermediate",
+        "maxPlayers": "12",
+        "duration": "2h",
         "genres": [
             "Party",
             "Family Friendly"
         ],
-        "otherDescription": "Join us in Ottawa for a beginner Mario party tournament. Have some fun with others in a friendly environment",
+        "tournamentDescription": "Join us in Ottawa for an intermediate Mario party tournament. Have some fun with others in a friendly environment",
         "gameDescription": "Turn the tables on opponents as you race across the board to collect the most stars in the original four-player Mario Party series board game mode—now with newly-added online play. Join the full-on frenzy with friends and family! Party it up with 80 minigames Whether you're pedaling tricycles, flipping meat, or who knows what else, you'll use Joy-Con™ controllers in clever ways across 80 wild minigames. Some are all-out free-for-alls, others are 2 vs 2, or even 1 vs 3"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Mario Kart 8 Tournament 2",
+        "videoGame": "Mario Kart 8 Deluxe",
         "src": "resources/MarioKart8.jpg",
-        "date": "August 17, 2024",
-        "time": "15:30",
-        "location": "Ottawa",
-        "level": "Intermediate",
+        "date": "August 31, 2024",
+        "time": "14:00",
+        "location": "Toronto",
+        "level": "Beginner",
+        "maxPlayers": "8",
+        "duration": "1.5h",
         "genres": [
             "Racing",
             "Family Friendly"
         ],
-        "otherDescription": "Join us in Ottawa for an intermediate Mario Kart tournament. Have some fun with others in a friendly environment",
+        "tournamentDescription": "Join us in Ottawa for a beginner Mario Kart tournament. Have some fun with others in a friendly environment",
         "gameDescription": "Burn rubber across Mushroom Kingdom raceways—underwater, in the sky, upside-down in zero-g, and past the finish—for the win! Get revved up for local multiplayer*, online** in-game tournaments, a revamped battle mode, and more! Stay fresh in the Mario Kart™ 8 Deluxe game by playing as guest characters Inkling Girl and Inkling Boy! You can use their Splatoon inspired karts on their battle mode stage, Urchin Underpass. There are also returning items, like Boo, the item-stealing ghost, and the Feather, used exclusively in battle mode. Veterans rejoice—you can hold two items at once! Prove you're the world's best racer and battler in online tournaments, or simply race and battle friends online. With many control options and handheld mode, there's always a way to play on the Nintendo Switch™ system!"
     },
     {
-        "id": 6,
-        "name": "Super Smash Bros Ultimate 2",
+        "id": 7,
+        "name": "Super Smash Bros Ultimate Tournament 2",
+        "videoGame": "Super Smash Bros Ultimate",
         "src": "resources/SuperSmashBrosUltimate.jpg",
-        "date": "August 25, 2024",
-        "time": "09:00",
-        "location": "Toronto",
+        "date": "September 5th, 2024",
+        "time": "17:00",
+        "location": "Montreal",
         "level": "Expert",
+        "maxPlayers": "12",
+        "duration": "6h",
         "genres": [
+            "Action",
+            "Family Friendly",
             "Fighting"
         ],
-        "otherDescription": "Join us in Toronto for an expert Super Smash Bros Ultimate tournament. Have some fun with others in a friendly environment",
+        "tournamentDescription": "Join us in Toronto for an expert Super Smash Bros Ultimate tournament. Have some fun with others in a friendly environment",
         "gameDescription": "Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K. Rool join Inkling, Ridley, and every fighter in Super Smash Bros. history. Enjoy enhanced speed and combat at new stages based on the Castlevania series, Super Mario Odyssey, and more! Having trouble choosing a stage? Then select the Stage Morph option to transform one stage into another while battling—a series first! Plus, new echo fighters Dark Samus, Richter Belmont, and Chrom join the battle. Whether you play locally or online, savor the faster combat, new attacks, and new defensive options, like a perfect shield. Jam out to 900 different music compositions and go 1-on-1 with a friend, hold a 4-player free-for-all, kick it up to 8-player battles and more! Feel free to bust out your GameCube controllers—legendary couch competitions await—or play together anytime, anywhere!"
+    },
+    {
+        "id": 8,
+        "name": "Chained Together Tournament/Play along",
+        "videoGame": "Chained Together",
+        "src": "resources/ChainedTogether.jpg",
+        "date": "September 11th, 2024",
+        "time": "18:00",
+        "location": "Montreal",
+        "level": "Intermediate",
+        "maxPlayers": "4",
+        "duration": "3h",
+        "genres": [
+            "Adventure",
+            "Platformer"
+        ],
+        "tournamentDescription": "Do you enjoy difficult platforming games? Want to work with other expert platformers or compete against them? Join us in Toronto for various tournaments of Chained Together.",
+        "gameDescription": "Dive into the epic adventure of 'Chained Together' Begin your journey in the depths of hell, chained to your companions. Your mission is to escape hell by climbing as high as possible. Each jump requires perfect coordination to scale the platforms and escape the scorching heat. Traverse a multitude of worlds, each offering unique challenges."
     }
 ]
