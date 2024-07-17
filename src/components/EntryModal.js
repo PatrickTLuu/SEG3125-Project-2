@@ -5,18 +5,9 @@ import { Button } from 'react-bootstrap';
 import { Modal } from 'react-bootstrap';
 import { Stack } from 'react-bootstrap';
 import { Badge } from 'react-bootstrap';
-import Tournaments from "../data/tournaments.json"
-import Trades from "../data/trades.json"
 import InformationModal from "./InformationModal";
 import { useState } from "react";
-
-const getTournamentFromJson = (id) => {
-    return Tournaments.find(entry => entry.id === id);
-}
-
-const getTradesFromJson = (id) => {
-  return Trades.find(entry => entry.id === id);
-}
+import { getTournament, getTrade } from "../utils/GetData";
 
 const getLevelBackground = (level) => {
     switch (level) {
@@ -44,12 +35,12 @@ export default function EntryModal(params) {
 
     switch (params.type) {
       case "tournaments":
-        item = getTournamentFromJson(params.id);
+        item = getTournament(params.id);
         infoModalBtnMsg = "Join";
         break;
 
       case "trades":
-          item = getTradesFromJson(params.id);
+          item = getTrade(params.id)
           infoModalBtnMsg = "Send";
           break;
     

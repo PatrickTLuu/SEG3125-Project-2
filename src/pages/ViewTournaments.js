@@ -4,15 +4,17 @@ import {Row, Col, Form} from 'react-bootstrap'
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Entry from '../components/Entry';
-import Tournaments from '../data/tournaments.json'
 import { useEffect, useState } from 'react';
 import EntryModal from '../components/EntryModal';
 import Multiselect from '../components/Multiselect';
 import Selector from '../components/Selector';
 import { partitionInto4 } from '../utils/Partition';
+import { getAllTournaments } from '../utils/GetData';
 
 const getTournaments = (filters) => {
-    const filtered = Tournaments.filter(tournament => {
+    const allTournaments = getAllTournaments();
+
+    const filtered = allTournaments.filter(tournament => {
         const tournamentTime = new Date("1/1/1970 " + tournament.time);
         const startTime = filters.timesStart === "--:--" ? new Date("1/1/1970 00:00") : new Date("1/1/1970 " + filters.timesStart);
         const endTime = filters.timesEnd === "--:--" ? new Date("1/1/1970 23:00") : new Date("1/1/1970 " + filters.timesEnd);
