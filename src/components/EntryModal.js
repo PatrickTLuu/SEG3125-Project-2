@@ -6,7 +6,7 @@ import { Modal } from 'react-bootstrap';
 import { Stack } from 'react-bootstrap';
 import { Badge } from 'react-bootstrap';
 import InformationModal from "./InformationModal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getTournament, getTrade } from "../utils/GetData";
 
 const getLevelBackground = (level) => {
@@ -48,14 +48,18 @@ export default function EntryModal(params) {
         break;
     }
 
+    useEffect(() => {
+        setCardText(item.tournamentDescription);
+    }, [item]) 
+
     const [isLearnMoreClicked, setIsLearnMoreClicked] = useState(false);
-    const [cardText, setCardText] = useState(item.otherDescription);
+    const [cardText, setCardText] = useState(item.tournamentDescription);
     const learnMoreClicked = () => {
         setCardText(item.gameDescription);
         setIsLearnMoreClicked(true);
     }
     const descriptionClicked = () => {
-        setCardText(item.otherDescription);
+        setCardText(item.tournamentDescription);
         setIsLearnMoreClicked(false);
     }
 

@@ -55,7 +55,7 @@ export default function Multiselect(params) {
                     {selected.length} {params.type} selected
                 </Dropdown.Toggle>
                 <Dropdown.Menu>
-                    <Form>
+                    <Form.Group>
                         {options.map(option => (
                             <Form.Check
                             type="checkbox"
@@ -67,7 +67,7 @@ export default function Multiselect(params) {
                             onChange={() => handleOptionClick(option)}
                             />
                         ))}
-                    </Form>
+                    </Form.Group>
                 </Dropdown.Menu>
             </Dropdown>
         </div>
