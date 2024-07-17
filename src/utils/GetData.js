@@ -1,6 +1,15 @@
 import Tournaments from "../data/tournaments.json"
 import Trades from "../data/trades.json"
 
+export const getNextTournamentId = () => {
+    if (localStorage.getItem("tournaments") == null) {
+        return 100;
+    } else {
+        const localTournaments = JSON.parse(localStorage.getItem("tournaments") || "[]");
+        return localTournaments.at(-1).id + 1;
+    }
+}
+
 export const getTournament = (id) => {
     if (id < 100) {
         return Tournaments.find(entry => entry.id === id);
