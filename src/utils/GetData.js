@@ -24,6 +24,15 @@ export const getAllTournaments = () => {
     return Tournaments.concat(localTournaments);
 }
 
+export const getNextTradeId = () => {
+    if (localStorage.getItem("trades") == null) {
+        return 100;
+    } else {
+        const localTrades = JSON.parse(localStorage.getItem("trades") || "[]");
+        return localTrades.at(-1).id + 1;
+    }
+}
+
 export const getTrade = (id) => {
     if (id < 100) {
         return Trades.find(entry => entry.id === id);
@@ -31,4 +40,9 @@ export const getTrade = (id) => {
         const localTrades = JSON.parse(localStorage.getItem("trades") || "[]");
         return localTrades.at(id - 100);
     }
+}
+
+export const getAllTrades = () => {
+    const localTrades = JSON.parse(localStorage.getItem("trades") || "[]");
+    return Trades.concat(localTrades);
 }

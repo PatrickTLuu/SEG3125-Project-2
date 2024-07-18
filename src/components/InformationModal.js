@@ -33,7 +33,7 @@ export default function InformationModal(params) {
                         </Form.Group>
                         <Form.Group className="margin-top">
                             <Form.Label>Your email</Form.Label>
-                            <Form.Control type="text" placeholder="example@example.com" {...register("email", { required: true })}></Form.Control>
+                            <Form.Control type="email" placeholder="example@example.com" {...register("email", { required: true })}></Form.Control>
                             {errors.email && <Form.Text>Please enter your email</Form.Text>}
                         </Form.Group>
                         {params.btnMsg === "Send" &&

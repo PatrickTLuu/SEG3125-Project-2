@@ -9,9 +9,11 @@ import { useEffect, useState } from 'react';
 import EntryModal from '../components/EntryModal';
 import Multiselect from '../components/Multiselect';
 import { partitionInto4 } from '../utils/Partition';
+import { getAllTrades } from '../utils/GetData';
 
 const getTrades = (filters) => {
-    const filtered = Trades.filter(trade => {
+    const allTrades = getAllTrades();
+    const filtered = allTrades.filter(trade => {
         
         if (filters.genres.length !== 0 && !filters.genres.every(genre => {return trade.genres.includes(genre, 0)})) {
             return false;
