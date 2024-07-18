@@ -84,8 +84,10 @@ export default function EntryModal(params) {
                         </Row>
                         <Stack direction="horizontal" className="justify-content-center modal-stack" gap={2}>
                             <Badge pill>{item.date} @ {item.time}</Badge>
+                            <Badge pill>{item.duration}</Badge>
                             <Badge pill>{item.location}</Badge>
                             <Badge bg={levelBackground} pill>{item.level}</Badge>
+                            <Badge pill>{item.maxPlayers} players</Badge>
                             {item.genres.map(genre => (
                                 <Badge key={genre} pill>{genre}</Badge>
                             ))}
@@ -100,7 +102,7 @@ export default function EntryModal(params) {
                 </Card>
             </Modal>
 
-            <InformationModal show={show} handleClose={handleClose} btnMsg={infoModalBtnMsg}></InformationModal>
+            <InformationModal show={show} handleClose={handleClose} btnMsg={infoModalBtnMsg} tournament={item.name}></InformationModal>
         </div>
     );
 }
