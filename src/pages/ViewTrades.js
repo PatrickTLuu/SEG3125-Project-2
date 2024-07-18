@@ -56,7 +56,7 @@ export default function ViewTrades() {
             </Row>
     
         } else {
-            return <Row>
+            return <Row className="margin-bottom-large">
                 {trades.map(partition => (
                     <Col key={trades.indexOf(partition)}>
                         {partition.map(entry => (
