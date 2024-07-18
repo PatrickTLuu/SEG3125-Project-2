@@ -37,7 +37,7 @@
     },
     {
         "id": 3,
-        "name": "Super Smash Bros Ultimate",
+        "name": "Super Smash Bros Tournament",
         "videoGame": "Super Smash Bros Ultimate",
         "src": "resources/SuperSmashBrosUltimate.jpg",
         "date": "August 20, 2024",
@@ -56,8 +56,8 @@
     },
     {
         "id": 4,
-        "name": "Chained Together",
-        "src": "resources/SuperSmashBrosUltimate.jpg",
+        "name": "Chained Together Play along",
+        "src": "resources/ChainedTogether.jpg",
         "date": "August 20, 2024",
         "time": "18:00",
         "location": "Toronto",
@@ -109,7 +109,7 @@
     },
     {
         "id": 7,
-        "name": "Super Smash Bros Ultimate Tournament 2",
+        "name": "Super Smash Bros Tournament 2",
         "videoGame": "Super Smash Bros Ultimate",
         "src": "resources/SuperSmashBrosUltimate.jpg",
         "date": "September 5th, 2024",
@@ -128,7 +128,7 @@
     },
     {
         "id": 8,
-        "name": "Chained Together Tournament/Play along",
+        "name": "Chained Together Play along 2",
         "videoGame": "Chained Together",
         "src": "resources/ChainedTogether.jpg",
         "date": "September 11th, 2024",

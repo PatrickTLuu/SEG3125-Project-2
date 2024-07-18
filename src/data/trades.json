@@ -2,87 +2,123 @@
     {
         "id": 1,
         "name": "Super Mario Party",
+        "videoGame": "Super Mario Party",
         "src": "resources/SuperMarioParty.jpg",
-        "date": "Aug 20th, 2024",
+        "date": "August 20, 2024",
         "time": "23:59",
         "location": "Ottawa",
         "genres": [
             "Party",
             "Family Friendly"
         ],
-        "otherDescription": "Game has never been played and the case is still wrapped in its original plastic.",
+        "tournamentDescription": "Game is in original case and has never been opened. Looking for about $60 but open to negotiate.",
         "gameDescription": "Turn the tables on opponents as you race across the board to collect the most stars in the original four-player Mario Party series board game mode—now with newly-added online play. Join the full-on frenzy with friends and family! Party it up with 80 minigames Whether you're pedaling tricycles, flipping meat, or who knows what else, you'll use Joy-Con™ controllers in clever ways across 80 wild minigames. Some are all-out free-for-alls, others are 2 vs 2, or even 1 vs 3"
-
     },
     {
         "id": 2,
         "name": "Mario Kart 8",
+        "videoGame": "Mario Kart 8 Deluxe",
         "src": "resources/MarioKart8.jpg",
-        "date": "Aug 20th, 2024",
+        "date": "August 15, 2024",
         "time": "23:59",
         "location": "Ottawa",
         "genres": [
             "Racing",
             "Family Friendly"
         ],
-        "otherDescription": "Game has never been played and the case is still wrapped in its original plastic.",
+        "tournamentDescription": "Game is in original case and has never been opened. Looking for about $40 but open to negotiate.",
         "gameDescription": "Burn rubber across Mushroom Kingdom raceways—underwater, in the sky, upside-down in zero-g, and past the finish—for the win! Get revved up for local multiplayer*, online** in-game tournaments, a revamped battle mode, and more! Stay fresh in the Mario Kart™ 8 Deluxe game by playing as guest characters Inkling Girl and Inkling Boy! You can use their Splatoon inspired karts on their battle mode stage, Urchin Underpass. There are also returning items, like Boo, the item-stealing ghost, and the Feather, used exclusively in battle mode. Veterans rejoice—you can hold two items at once! Prove you're the world's best racer and battler in online tournaments, or simply race and battle friends online. With many control options and handheld mode, there's always a way to play on the Nintendo Switch™ system!"
     },
     {
         "id": 3,
-        "name": "Super Smash Bros Ultimate",
-        "src": "resources/SuperSmashBrosUltimate.jpg",
-        "date": "Aug 20th, 2024",
+        "name": "Super Mario All Stars",
+        "videoGame": "Super Mario All Stars SNES",
+        "src": "resources/SuperMarioAllStars.png",
+        "date": "August 31, 2024",
         "time": "23:59",
-        "location": "Ottawa",
+        "location": "Toronto",
         "genres": [
-            "Fighting"
+            "Platformer",
+            "Family Friendly",
+            "Retro"
         ],
-        "otherDescription": "Game has never been played and the case is still wrapped in its original plastic.",
-        "gameDescription": "Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K. Rool join Inkling, Ridley, and every fighter in Super Smash Bros. history. Enjoy enhanced speed and combat at new stages based on the Castlevania series, Super Mario Odyssey, and more! Having trouble choosing a stage? Then select the Stage Morph option to transform one stage into another while battling—a series first! Plus, new echo fighters Dark Samus, Richter Belmont, and Chrom join the battle. Whether you play locally or online, savor the faster combat, new attacks, and new defensive options, like a perfect shield. Jam out to 900 different music compositions and go 1-on-1 with a friend, hold a 4-player free-for-all, kick it up to 8-player battles and more! Feel free to bust out your GameCube controllers—legendary couch competitions await—or play together anytime, anywhere!"
-
+        "tournamentDescription": "Game comes with its original case, the cartridge has a few scratches on it but works perfectly. Looking for no less than $100.",
+        "gameDescription": "Super Mario All-Stars is a 1993 compilation of platform games for the Super Nintendo Entertainment System (SNES). It contains remakes of Nintendo's four Super Mario games released for the Nintendo Entertainment System (NES) and the Famicom Disk System: Super Mario Bros. (1985), Super Mario Bros.: The Lost Levels (1986), Super Mario Bros. 2 (1988), and Super Mario Bros. 3 (1988). As in the original games, players control the Italian plumber Mario and his brother Luigi through themed worlds, collecting power-ups, avoiding obstacles, and finding secrets. The remakes feature updated graphics—including the addition of parallax scrolling—and music, modified game physics, a save feature, and bug fixes"
     },
     {
         "id": 4,
+        "name": "Super Smash Bros Brawl",
+        "src": "resources/SuperSmashBrosBrawl.jpg",
+        "date": "August 20, 2024",
+        "time": "23:59",
+        "location": "Toronto",
+        "genres": [
+            "Family Friendly",
+            "Fighting",
+            "Action"
+        ],
+        "tournamentDescription": "Game does not come in its original case but works perfectly. Looking for about $50.",
+        "gameDescription": "Welcome to a brawl for the ages, where anything can happen, anyone can show up and all bets are off. This action-packed fighting game features a ridiculous number of characters that have appeared on Nintendo platforms, from Mario to Link to Pikachu to Solid Snake! As they square off in famous locales drawn from the rich history of Nintendo, literally anything can happen - and usually does. With limitless customizing options, items and weapons that boggle the mind and a wealth of modes, this game has truly infinite replayability."
+    },
+    {
+        "id": 5,
         "name": "Super Mario Party",
+        "videoGame": "Super Mario Party",
         "src": "resources/SuperMarioParty.jpg",
-        "date": "Aug 20th, 2024",
+        "date": "August 20, 2024",
         "time": "23:59",
         "location": "Ottawa",
         "genres": [
             "Party",
             "Family Friendly"
         ],
-        "otherDescription": "Game has never been played and the case is still wrapped in its original plastic.",
+        "tournamentDescription": "Game is in original case and has never been opened. Looking for about $60 but open to negotiate.",
         "gameDescription": "Turn the tables on opponents as you race across the board to collect the most stars in the original four-player Mario Party series board game mode—now with newly-added online play. Join the full-on frenzy with friends and family! Party it up with 80 minigames Whether you're pedaling tricycles, flipping meat, or who knows what else, you'll use Joy-Con™ controllers in clever ways across 80 wild minigames. Some are all-out free-for-alls, others are 2 vs 2, or even 1 vs 3"
     },
     {
-        "id": 5,
+        "id": 6,
         "name": "Mario Kart 8",
+        "videoGame": "Mario Kart 8 Deluxe",
         "src": "resources/MarioKart8.jpg",
-        "date": "Aug 20th, 2024",
+        "date": "August 15, 2024",
         "time": "23:59",
         "location": "Ottawa",
         "genres": [
             "Racing",
             "Family Friendly"
         ],
-        "otherDescription": "Game has never been played and the case is still wrapped in its original plastic.",
+        "tournamentDescription": "Game is in original case and has never been opened. Looking for about $40 but open to negotiate.",
         "gameDescription": "Burn rubber across Mushroom Kingdom raceways—underwater, in the sky, upside-down in zero-g, and past the finish—for the win! Get revved up for local multiplayer*, online** in-game tournaments, a revamped battle mode, and more! Stay fresh in the Mario Kart™ 8 Deluxe game by playing as guest characters Inkling Girl and Inkling Boy! You can use their Splatoon inspired karts on their battle mode stage, Urchin Underpass. There are also returning items, like Boo, the item-stealing ghost, and the Feather, used exclusively in battle mode. Veterans rejoice—you can hold two items at once! Prove you're the world's best racer and battler in online tournaments, or simply race and battle friends online. With many control options and handheld mode, there's always a way to play on the Nintendo Switch™ system!"
-
     },
     {
-        "id": 6,
-        "name": "Super Smash Bros Ultimate",
-        "src": "resources/SuperSmashBrosUltimate.jpg",
-        "date": "Aug 20th, 2024",
+        "id": 7,
+        "name": "Super Mario All Stars",
+        "videoGame": "Super Mario All Stars SNES",
+        "src": "resources/SuperMarioAllStars.png",
+        "date": "August 31, 2024",
         "time": "23:59",
-        "location": "Ottawa",
+        "location": "Toronto",
         "genres": [
-            "Fighting"
+            "Platformer",
+            "Family Friendly",
+            "Retro"
         ],
-        "otherDescription": "Game has never been played and the case is still wrapped in its original plastic.",
-        "gameDescription": "Gaming icons clash in the ultimate brawl you can play anytime, anywhere! Smash rivals off the stage as new characters Simon Belmont and King K. Rool join Inkling, Ridley, and every fighter in Super Smash Bros. history. Enjoy enhanced speed and combat at new stages based on the Castlevania series, Super Mario Odyssey, and more! Having trouble choosing a stage? Then select the Stage Morph option to transform one stage into another while battling—a series first! Plus, new echo fighters Dark Samus, Richter Belmont, and Chrom join the battle. Whether you play locally or online, savor the faster combat, new attacks, and new defensive options, like a perfect shield. Jam out to 900 different music compositions and go 1-on-1 with a friend, hold a 4-player free-for-all, kick it up to 8-player battles and more! Feel free to bust out your GameCube controllers—legendary couch competitions await—or play together anytime, anywhere!"
-
+        "tournamentDescription": "Game comes with its original case, the cartridge has a few scratches on it but works perfectly. Looking for no less than $100.",
+        "gameDescription": "Super Mario All-Stars is a 1993 compilation of platform games for the Super Nintendo Entertainment System (SNES). It contains remakes of Nintendo's four Super Mario games released for the Nintendo Entertainment System (NES) and the Famicom Disk System: Super Mario Bros. (1985), Super Mario Bros.: The Lost Levels (1986), Super Mario Bros. 2 (1988), and Super Mario Bros. 3 (1988). As in the original games, players control the Italian plumber Mario and his brother Luigi through themed worlds, collecting power-ups, avoiding obstacles, and finding secrets. The remakes feature updated graphics—including the addition of parallax scrolling—and music, modified game physics, a save feature, and bug fixes"
+    },
+    {
+        "id": 8,
+        "name": "Super Smash Bros Brawl",
+        "src": "resources/SuperSmashBrosBrawl.jpg",
+        "date": "August 20, 2024",
+        "time": "23:59",
+        "location": "Toronto",
+        "genres": [
+            "Family Friendly",
+            "Fighting",
+            "Action"
+        ],
+        "tournamentDescription": "Game does not come in its original case but works perfectly. Looking for about $50.",
+        "gameDescription": "Welcome to a brawl for the ages, where anything can happen, anyone can show up and all bets are off. This action-packed fighting game features a ridiculous number of characters that have appeared on Nintendo platforms, from Mario to Link to Pikachu to Solid Snake! As they square off in famous locales drawn from the rich history of Nintendo, literally anything can happen - and usually does. With limitless customizing options, items and weapons that boggle the mind and a wealth of modes, this game has truly infinite replayability."
     }
 ]
