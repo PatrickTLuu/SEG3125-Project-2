@@ -84,10 +84,10 @@ export default function EntryModal(params) {
                         </Row>
                         <Stack direction="horizontal" className="justify-content-center modal-stack" gap={2}>
                             <Badge pill>{item.date} @ {item.time}</Badge>
-                            <Badge pill>{item.duration}</Badge>
+                            {item.duration != null && <Badge pill>{item.duration}</Badge>}
                             <Badge pill>{item.location}</Badge>
-                            <Badge bg={levelBackground} pill>{item.level}</Badge>
-                            <Badge pill>{item.maxPlayers} players</Badge>
+                            {item.level != null && <Badge bg={levelBackground} pill>{item.level}</Badge>}
+                            {item.maxPlayers != null && <Badge pill>{item.maxPlayers} players</Badge>}
                             {item.genres.map(genre => (
                                 <Badge key={genre} pill>{genre}</Badge>
                             ))}
