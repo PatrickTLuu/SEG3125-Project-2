@@ -1,0 +1,41 @@
+{
+    "Home": {
+        "title": "Your one stop shop for tournaments and games",
+        "createTournament": "Create a Tournament",
+        "viewTournaments": "View Tournaments",
+        "postTrade": "Post a Trade",
+        "viewTrades": "View Trades",
+        "dropdownTournaments": "Tournaments",
+        "dropdownTrades": "Trades"
+    },
+    "CreateTournament": {
+        "title": "Create a tournament",
+        "formLabelName": "Tournament Name",
+        "formControlName": "Enter tournament name",
+        "formTextName": "Please enter a tournament name",
+        "formLabelVideoGame": "Video Game",
+        "formControlVideoGame": "Enter video game",
+        "formTextVideoGame": "Please enter a video game",
+        "formLabelGenres": "Genres",
+        "formLabelLevel": "Level",
+        "formTextLevel": "Please select a skill level",
+        "formLabelDate": "Date",
+        "formTextDate": "Please select a date",
+        "formLabelTime": "Time",
+        "formTextTime": "Please select an approximate starting time",
+        "formLabelCity": "City",
+        "formControlCity": "Enter city",
+        "formTextCity": "Please enter a city",
+        "formLabelMaxPlayers": "Max Players",
+        "formTextMaxPlayers": "Please select the max number of players",
+        "formLabelDuration": "Duration",
+        "formTextDuration": "Please select a duration",
+        "formLabelTournamentDescription": "Tournament Description",
+        "formTextTournamentDescription": "Please enter a tournament description",
+        "formLabelGameDescription": "Game Description",
+        "formTextGameDescription": "Please enter a game description",
+        "formLabelImage": "Upload an image",
+        "formTextImage": "Please upload an image",
+        "submitButton": "Submit"
+    }
+}

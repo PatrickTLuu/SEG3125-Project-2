@@ -8,6 +8,7 @@ import { Controller, useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { storeData } from "../utils/StoreData";
 import { getNextTournamentId } from "../utils/GetData";
+import { getText } from "../utils/GetText";
 
 export default function CreateTournament() {
     const { register, setValue, control, handleSubmit, formState: { errors } } = useForm();
@@ -30,28 +31,28 @@ export default function CreateTournament() {
         <div>
             <Header></Header>
             <Container>
-                <h3 className="title">Create a tournament</h3>
+                <h3 className="title-tournaments">{getText("CreateTournament", "title")}</h3>
                 <Form onSubmit={handleSubmit(onSubmit)}>
                     <Form.Group className="margin-top">
-                        <Form.Label>Tournament Name</Form.Label>
-                        <Form.Control type="text" placeholder="Enter tournament name" {...register("name", { required: true })}></Form.Control>
-                        {errors.name && <Form.Text>Please enter a tournament name</Form.Text>}
+                        <Form.Label>{getText("CreateTournament", "formLabelName")}</Form.Label>
+                        <Form.Control type="text" placeholder={getText("CreateTournament", "formControlName")} {...register("name", { required: true })}></Form.Control>
+                        {errors.name && <Form.Text>{getText("CreateTournament", "formTextName")}</Form.Text>}
                     </Form.Group>
                     <Form.Group className="margin-top">
-                        <Form.Label>Video Game</Form.Label>
-                        <Form.Control type="text" placeholder="Enter video game" {...register("videoGame", { required: true })}></Form.Control>
-                        {errors.videoGame && <Form.Text>Please enter a video game</Form.Text>}
+                        <Form.Label>{getText("CreateTournament", "formLabelVideoGame")}</Form.Label>
+                        <Form.Control type="text" placeholder={getText("CreateTournament", "formControlVideoGame")} {...register("videoGame", { required: true })}></Form.Control>
+                        {errors.videoGame && <Form.Text>{getText("CreateTournament", "formTextVideoGame")}</Form.Text>}
                     </Form.Group>
                     <Row className="margin-top">
                         <Col>
                             <Form.Group>
-                                <Form.Label>Genres</Form.Label>
+                                <Form.Label>{getText("CreateTournament", "formLabelGenres")}</Form.Label>
                                 <Multiselect type="genres" handlechange={handleMultiselect}></Multiselect>
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group>
-                                <Form.Label>Level</Form.Label>
+                                <Form.Label>{getText("CreateTournament", "formLabelLevel")}</Form.Label>
                                 <Controller
                                     name="level"
                                     control={control}
@@ -71,19 +72,19 @@ export default function CreateTournament() {
                                         />
                                     )}
                                 />
-                                {errors.level && <Form.Text>Please select a skill level</Form.Text>}
+                                {errors.level && <Form.Text>{getText("CreateTournament", "formTextLevel")}</Form.Text>}
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group>
-                                <Form.Label>Date</Form.Label>
+                                <Form.Label>{getText("CreateTournament", "formLabelDate")}</Form.Label>
                                 <Form.Control className="date-input" type="date" {...register("date", { required: true })}></Form.Control>
-                                {errors.date && <Form.Text>Please select a date</Form.Text>}
+                                {errors.date && <Form.Text>{getText("CreateTournament", "formTextDate")}</Form.Text>}
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group>
-                                <Form.Label>Time</Form.Label>
+                                <Form.Label>{getText("CreateTournament", "formLabelTime")}</Form.Label>
                                 <Controller
                                     name="time"
                                     control={control}
@@ -103,21 +104,21 @@ export default function CreateTournament() {
                                         />
                                     )}
                                 />
-                                {errors.time && <Form.Text>Please select an approximate starting time</Form.Text>}
+                                {errors.time && <Form.Text>{getText("CreateTournament", "formTextTime")}</Form.Text>}
                             </Form.Group>
                         </Col>
                     </Row>
                     <Row className="margin-top">
                         <Col>
                             <Form.Group>
-                                <Form.Label>City</Form.Label>
-                                <Form.Control type="text" placeholder="Enter city" {...register("location", { required: true })}></Form.Control>
-                                {errors.location && <Form.Text>Please enter a city</Form.Text>}
+                                <Form.Label>{getText("CreateTournament", "formLabelCity")}</Form.Label>
+                                <Form.Control type="text" placeholder={getText("CreateTournament", "formControlCity")} {...register("location", { required: true })}></Form.Control>
+                                {errors.location && <Form.Text>{getText("CreateTournament", "formTextCity")}</Form.Text>}
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group>
-                                <Form.Label>Max Players</Form.Label>
+                                <Form.Label>{getText("CreateTournament", "formLabelMaxPlayers")}</Form.Label>
                                 <Controller
                                     name="maxPlayers"
                                     control={control}
@@ -137,12 +138,12 @@ export default function CreateTournament() {
                                         />
                                     )}
                                 />
-                                {errors.maxPlayers && <Form.Text>Please select the max number of players</Form.Text>}
+                                {errors.maxPlayers && <Form.Text>{getText("CreateTournament", "formTextMaxPlayers")}</Form.Text>}
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group>
-                                <Form.Label>Duration</Form.Label>
+                                <Form.Label>{getText("CreateTournament", "formLabelDuration")}</Form.Label>
                                 <Controller
                                     name="duration"
                                     control={control}
@@ -162,7 +163,7 @@ export default function CreateTournament() {
                                         />
                                     )}
                                 />
-                                {errors.duration && <Form.Text>Please select a duration</Form.Text>}
+                                {errors.duration && <Form.Text>{getText("CreateTournament", "formTextDuration")}</Form.Text>}
                             </Form.Group>
                         </Col>
                     </Row>
@@ -170,29 +171,29 @@ export default function CreateTournament() {
                     <Row>
                         <Col>
                             <Form.Group className="margin-top">
-                                <Form.Label>Tournament Description</Form.Label>
+                                <Form.Label>{getText("CreateTournament", "formLabelTournamentDescription")}</Form.Label>
                                 <Form.Control as="textarea" {...register("tournamentDescription", { required: true })}></Form.Control>
-                                {errors.tournamentDescription && <Form.Text>Please enter a tournament description</Form.Text>}
+                                {errors.tournamentDescription && <Form.Text>{getText("CreateTournament", "formTextTournamentDescription")}</Form.Text>}
                             </Form.Group>
                         </Col>
                         <Col>
                             <Form.Group className="margin-top">
-                                <Form.Label>Game Description</Form.Label>
+                                <Form.Label>{getText("CreateTournament", "formLabelGameDescription")}</Form.Label>
                                 <Form.Control as="textarea" {...register("gameDescription", { required: true })}></Form.Control>
-                                {errors.gameDescription && <Form.Text>Please enter a game description</Form.Text>}
+                                {errors.gameDescription && <Form.Text>{getText("CreateTournament", "formTextGameDescription")}</Form.Text>}
                             </Form.Group>
                         </Col>
                     </Row>
 
                     <Form.Group className="margin-top" controlId="formFile">
-                        <Form.Label>Upload an image</Form.Label>
+                        <Form.Label>{getText("CreateTournament", "formLabelImage")}</Form.Label>
                         <Form.Control type="file" {...register("src", { required: true })}></Form.Control>
-                        {errors.src && <Form.Text>Please upload an image</Form.Text>}
+                        {errors.src && <Form.Text>{getText("CreateTournament", "formTextImage")}</Form.Text>}
                     </Form.Group>
 
                     <Row className="margin-top margin-bottom text-align-center">
                         <Col>
-                            <Button className="blue pill" type="submit">Submit</Button>
+                            <Button className="blue pill" type="submit">{getText("CreateTournament", "submitButton")}</Button>
                         </Col>
                     </Row>
                 </Form>
