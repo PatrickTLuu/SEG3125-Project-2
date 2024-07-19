@@ -4,17 +4,17 @@
     padding: 0 0 0 0;
 }
 
-.dropdown-toggle {
+.nav-dropdown {
     color: white;
     font-size: xx-large;
 }
 
-.dropdown-toggle:hover {
+.nav-dropdown:hover {
     color: white;
     font-size: xx-large;
 }
 
-.dropdown-toggle:focus {
+.nav-dropdown:focus {
     color: white;
     font-size: xx-large;
 }

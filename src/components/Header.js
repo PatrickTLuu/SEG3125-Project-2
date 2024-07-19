@@ -27,32 +27,40 @@ export default function Header() {
     }
 
     return (
-        <div className="header">
+        <div className="header" role="banner">
             <Row className='text-align-center'>
                 <Col>
-                    <Button id="brand-name" as={Link} to="/">Games Central</Button>
+                    <Button id="brand-name" as={Link} to="/" aria-label="Games Central Home">Games Central</Button>
                 </Col>
                 <Col lg={1} md={1} sm={1} className="language-selector-col">
-                    <FormSelect className="language-selector" onChange={(e) => handleLanguageChange(e.target.value)}>
-                        <option disabled={!isEnglish} hidden={!isEnglish}>EN</option>
+                    <FormSelect className="language-selector" onChange={(e) => handleLanguageChange(e.target.value)} aria-label="Language Selector">
+                        <option disabled={!isEnglish} hidden={!isEnglish} aria-hidden={!isEnglish}>EN</option>
                         <option>FR</option>
-                        <option disabled={isEnglish} hidden={isEnglish}>EN</option>
+                        <option disabled={isEnglish} hidden={isEnglish} aria-hidden={isEnglish}>EN</option>
                     </FormSelect>
                 </Col>
             </Row>
             <Row>
-                <Navbar className="justify-content-center navigation-bar" bg="dark" data-bs-theme="dark">
-                    <Col onMouseEnter={showTournamentsDropdown} onMouseLeave={hideTournamentsDropdown}>
-                        <NavDropdown title={getText("Home", "dropdownTournaments")} className="text-align-center" show={showTournaments}>
-                            <NavDropdown.Item className="dropdown-item" as={Link} to="/create_tournament">{getText("Home", "createTournament")}</NavDropdown.Item>
-                            <NavDropdown.Item className="dropdown-item" as={Link} to="/view_tournaments">{getText("Home", "viewTournaments")}</NavDropdown.Item>
+                <Navbar className="justify-content-center navigation-bar" bg="dark" data-bs-theme="dark" role="navigation" aria-label="Navigation Bar">
+                    <Col onMouseEnter={showTournamentsDropdown} onMouseLeave={hideTournamentsDropdown} role="navigation" aria-label="Tournaments Navigation">
+                        <NavDropdown title={getText("Home", "dropdownTournaments")} className="text-align-center nav-dropdown" show={showTournaments} aria-haspopup="true" aria-expanded={showTournaments}>
+                            <NavDropdown.Item className="dropdown-item" as={Link} to="/create_tournament" aria-label="Create Tournament">
+                                {getText("Home", "createTournament")}
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className="dropdown-item" as={Link} to="/view_tournaments" aria-label="View Tournaments">
+                                {getText("Home", "viewTournaments")}
+                            </NavDropdown.Item>
                         </NavDropdown>
                         <span className="rectangle blue"></span>
                     </Col>
-                    <Col onMouseEnter={showTradesDropdown} onMouseLeave={hideTradesDropdown}>
-                        <NavDropdown title={getText("Home", "dropdownTrades")} className="text-align-center" show={showTrades}>
-                            <NavDropdown.Item className="dropdown-item" as={Link} to="/post_trade">{getText("Home", "postTrade")}</NavDropdown.Item>
-                            <NavDropdown.Item className="dropdown-item" as={Link} to="/view_trades">{getText("Home", "viewTrades")}</NavDropdown.Item>
+                    <Col onMouseEnter={showTradesDropdown} onMouseLeave={hideTradesDropdown} role="navigation" aria-label="Trades Navigation">
+                        <NavDropdown title={getText("Home", "dropdownTrades")} className="text-align-center nav-dropdown" show={showTrades} aria-haspopup="true" aria-expanded={showTrades}>
+                            <NavDropdown.Item className="dropdown-item" as={Link} to="/post_trade" aria-label="Post a Trade">
+                                {getText("Home", "postTrade")}
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className="dropdown-item" as={Link} to="/view_trades" aria-label="View Trades">
+                                {getText("Home", "viewTrades")}
+                            </NavDropdown.Item>
                         </NavDropdown>
                         <span className="rectangle green"></span>
                     </Col>
