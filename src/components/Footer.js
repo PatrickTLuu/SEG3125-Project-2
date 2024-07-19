@@ -13,7 +13,7 @@ export default function Footer(properties) {
             </Row>
             <Row className='text-align-center'>
                 <Col>
-                    <Button size="lg" className={properties.colour + " pill"} as={Link} to={properties.href}>{properties.btnMsg}</Button>
+                    <Button size="lg" className={properties.colour + " footer-pill"} as={Link} to={properties.href}>{properties.btnMsg}</Button>
                 </Col>
             </Row>
         </div>

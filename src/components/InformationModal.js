@@ -23,7 +23,7 @@ export default function InformationModal(params) {
             <Modal.Header closeButton>
                 <Modal.Title className="align">Your Information</Modal.Title>
             </Modal.Header>
-            <Card className="entry-modal">
+            <Card className="information-modal">
                 <Card.Body>
                     {!submitted && <Form onSubmit={handleSubmit(onSubmit)}>
                         <Form.Group className="margin-top">
