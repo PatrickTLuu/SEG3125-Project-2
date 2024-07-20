@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {Routes, Route, HashRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import CreateTournament from "./pages/CreateTournament";
 import ViewTournaments from "./pages/ViewTournaments";
@@ -8,7 +8,7 @@ import ViewTrades from "./pages/ViewTrades";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
     <Routes>
       <Route path="" element={<Home />}></Route>
       <Route path="create_tournament" element={<CreateTournament />} />
@@ -17,7 +17,7 @@ function App() {
       <Route path="view_trades" element={<ViewTrades />} />
       <Route path="*" element={<Home />} />
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
   );
 }
 

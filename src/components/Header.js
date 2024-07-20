@@ -11,7 +11,7 @@ import { getText } from '../utils/GetText';
 export default function Header() {
     const [showTournaments, setShowTournaments] = useState(false);
     const [showTrades, setShowTrades] = useState(false);
-    const [isEnglish, setIsEnglish] = useState(localStorage.getItem("language") === "EN");
+    const [isEnglish, setIsEnglish] = useState(localStorage.getItem("language") == null ? "EN" : localStorage.getItem("language"));
 
 
     const showTournamentsDropdown = () => setShowTournaments(true);
