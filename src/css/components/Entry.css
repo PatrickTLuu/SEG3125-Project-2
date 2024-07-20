@@ -3,6 +3,18 @@
     cursor: pointer;
 }
 
+.complete-entry {
+    background-color: black;
+    opacity: 50%;
+    aspect-ratio: 1;
+}
+
+.complete-overlay {
+    font-size: larger;
+    transform: rotate(-20deg);
+    margin-top: 45%;
+
+}
 .join-button {
     margin-top: 2%;
     width: 50%;

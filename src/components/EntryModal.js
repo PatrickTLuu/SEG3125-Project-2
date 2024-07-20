@@ -8,6 +8,8 @@ import { Badge } from 'react-bootstrap';
 import InformationModal from "./InformationModal";
 import { useEffect, useState } from "react";
 import { getTournament, getTrade } from "../utils/GetData";
+import { datePassed } from "../utils/DatePassed";
+import ResultModal from "./ResultModal";
 
 const getLevelBackground = (level) => {
     switch (level) {
@@ -26,9 +28,13 @@ const getLevelBackground = (level) => {
 }
 
 export default function EntryModal(params) {
-    const [show, setShow] = useState(false);
-    const handleOpen = () => {setShow(true)}
-    const handleClose = () => {setShow(false)}
+    const [showInformationModal, setShowInformationModal] = useState(false);
+    const handleInformationModalOpen = () => {setShowInformationModal(true)}
+    const handleInformationModalClose = () => {setShowInformationModal(false)};
+
+    const [showResultModal, setShowResultModal] = useState(false);
+    const handleResultModalOpen = () => {setShowResultModal(true)}
+    const handleResultModalClose = () => {setShowResultModal(false)};
 
     var item;
     var infoModalBtnMsg;
@@ -64,6 +70,7 @@ export default function EntryModal(params) {
     }
 
     const levelBackground = getLevelBackground(item.level);
+    const isDatePassed = datePassed(item.date, item.time);
 
     return (
         <div>
@@ -96,13 +103,15 @@ export default function EntryModal(params) {
                             {cardText}
                         </Card.Text>
                         <Card.Footer className="text-align-center">
-                            <Button onClick={handleOpen} className="join-button">{params.btnMsg}</Button>
+                            {!isDatePassed && <Button onClick={handleInformationModalOpen} className="join-button">{params.btnMsg}</Button>}
+                            {isDatePassed && <Button onClick={handleResultModalOpen} className="join-button">View Results</Button>}
                         </Card.Footer>
                     </Card.Body>
                 </Card>
             </Modal>
 
-            <InformationModal show={show} handleClose={handleClose} btnMsg={infoModalBtnMsg} tournament={item.name}></InformationModal>
+            <InformationModal show={showInformationModal} handleClose={handleInformationModalClose} btnMsg={infoModalBtnMsg} tournament={item.name}></InformationModal>
+            <ResultModal show={showResultModal} handleClose={handleResultModalClose} tournament={item.name} src={item.resultSrc}></ResultModal>
         </div>
     );
 }
