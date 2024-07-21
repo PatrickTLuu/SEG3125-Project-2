@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Navbar from 'react-bootstrap/Navbar';
@@ -11,7 +11,7 @@ import { getText } from '../utils/GetText';
 export default function Header() {
     const [showTournaments, setShowTournaments] = useState(false);
     const [showTrades, setShowTrades] = useState(false);
-    const [isEnglish, setIsEnglish] = useState(localStorage.getItem("language") == null ? "EN" : localStorage.getItem("language"));
+    const [isEnglish, setIsEnglish] = useState(localStorage.getItem("language") == null || localStorage.getItem("language") === "EN" ? true : false);
 
 
     const showTournamentsDropdown = () => setShowTournaments(true);
@@ -26,6 +26,10 @@ export default function Header() {
         location.reload(true);
     }
 
+    useEffect(() => {
+        setIsEnglish(localStorage.getItem("language") == null || localStorage.getItem("language") === "EN" ? true : false);
+    }, [isEnglish]);
+    
     return (
         <div className="header" role="banner">
             <Row className='text-align-center'>
@@ -34,9 +38,9 @@ export default function Header() {
                 </Col>
                 <Col lg={1} md={1} sm={1} className="language-selector-col">
                     <FormSelect className="language-selector" onChange={(e) => handleLanguageChange(e.target.value)} aria-label="Language Selector">
-                        <option disabled={!isEnglish} hidden={!isEnglish} aria-hidden={!isEnglish}>EN</option>
+                        {isEnglish && <option>EN</option>}
                         <option>FR</option>
-                        <option disabled={isEnglish} hidden={isEnglish} aria-hidden={isEnglish}>EN</option>
+                        {!isEnglish && <option>EN</option>}
                     </FormSelect>
                 </Col>
             </Row>
