@@ -70,7 +70,7 @@ export default function CreateTournament() {
                     <Row>
                         <Col>
                             <Form.Group className="margin-top">
-                                <Form.Label>Tournament Description</Form.Label>
+                                <Form.Label>Trade Description</Form.Label>
                                 <Form.Control as="textarea" {...register("tournamentDescription", { required: true })}></Form.Control>
                                 {errors.tournamentDescription && <Form.Text>Please enter a description of the game&#39;s quality</Form.Text>}
                             </Form.Group>
