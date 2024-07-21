@@ -6,9 +6,12 @@ import { datePassed } from "../utils/DatePassed";
 
 export default function Entry(params) {
     var item;
+    var displayOverlay = false;
+
     switch (params.type) {
         case "tournaments":
             item = getTournament(params.id)
+            displayOverlay = datePassed(item.date, item.time);
             break;
 
         case "trades":
@@ -24,8 +27,8 @@ export default function Entry(params) {
         <div>
             <Card onClick={() => params.handleOpen(params.id)} border="secondary" className="entry">
                 <Card.Img variant="top" src={item.src}/>
-                {datePassed(item.date, item.time) && <Card.ImgOverlay className="complete-entry"></Card.ImgOverlay>}
-                {datePassed(item.date, item.time) && <Card.ImgOverlay><p className="complete-overlay text-align-center blue">Tournament Complete</p></Card.ImgOverlay>}
+                {displayOverlay && <Card.ImgOverlay className="complete-entry"></Card.ImgOverlay>}
+                {displayOverlay && <Card.ImgOverlay><p className="complete-overlay text-align-center blue">Tournament Complete</p></Card.ImgOverlay>}
                 <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
                     <Card.Text>

@@ -38,11 +38,13 @@ export default function EntryModal(params) {
 
     var item;
     var infoModalBtnMsg;
+    var displayOverlay = false;
 
     switch (params.type) {
       case "tournaments":
         item = getTournament(params.id);
         infoModalBtnMsg = "Join";
+        displayOverlay = datePassed(item.date, item.time);
         break;
 
       case "trades":
@@ -70,7 +72,6 @@ export default function EntryModal(params) {
     }
 
     const levelBackground = getLevelBackground(item.level);
-    const isDatePassed = datePassed(item.date, item.time);
 
     return (
         <div>
@@ -103,8 +104,8 @@ export default function EntryModal(params) {
                             {cardText}
                         </Card.Text>
                         <Card.Footer className="text-align-center">
-                            {!isDatePassed && <Button onClick={handleInformationModalOpen} className="join-button">{params.btnMsg}</Button>}
-                            {isDatePassed && <Button onClick={handleResultModalOpen} className="join-button">View Results</Button>}
+                            {!displayOverlay && <Button onClick={handleInformationModalOpen} className="join-button">{params.btnMsg}</Button>}
+                            {displayOverlay && <Button onClick={handleResultModalOpen} className="join-button">View Results</Button>}
                         </Card.Footer>
                     </Card.Body>
                 </Card>
