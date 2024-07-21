@@ -48,3 +48,15 @@ code {
 .green {
   background-color: #45A300;
 }
+
+.orange {
+  background-color: rgb(255, 123, 0);
+}
+
+.orange:hover {
+  background-color: rgb(255, 94, 0);
+}
+
+.orange:focus {
+  background-color: rgb(255, 94, 0);
+}

@@ -1,15 +1,27 @@
 import Header from "../components/Header";
+import InformationModal from "../components/InformationModal";
 import { Button, Card } from "react-bootstrap";
-import {Row, Col} from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import "../index.css"
+import "../css/components/Footer.css"
 import "../css/pages/Home.css"
 import { Link } from "react-router-dom";
 import { getText } from "../utils/GetText";
+import { useState } from "react";
 
 export default function Home() {
+    const [showInformationModal, setShowInformationModal] = useState(false);
+    const onclick = () => {
+        setShowInformationModal(true);
+    }
+    
+    const handleInformationModalClose = () => {
+        setShowInformationModal(false);
+    }
+
     return (
         <div>
-            <Header></Header>
+            <Header/>
             <h2 className="text-align-center title-home">{getText("Home", "title")}</h2>
             <Row>
                 <Col>
@@ -25,6 +37,9 @@ export default function Home() {
                     <LargeNavigation src="resources/ViewTrades.jpg" page={getText("Home", "viewTrades")} colour="green" to="view_trades"></LargeNavigation>
                 </Col>
             </Row>
+            
+            <ContactUs label="Need help? Send us a message anytime!" btnMsg="Contact Us" colour="orange" onclick={onclick}/>
+            <InformationModal show={showInformationModal} handleClose={handleInformationModalClose} btnMsg="Send" tournament="Contact Us"></InformationModal>
         </div>
     )
 }
@@ -37,5 +52,20 @@ function LargeNavigation(params) {
             <Button className={"nav-btn " + params.colour}>{params.page}</Button>
         </Card.ImgOverlay>
       </Card>
+    )
+}
+
+function ContactUs(params) {
+    return (
+        <div className="footer dark-theme">
+            <Row className="text-align-center">
+                <h3>{params.label}</h3>
+            </Row>
+            <Row className='text-align-center'>
+                <Col>
+                    <Button size="lg" className={params.colour + " footer-pill"} onClick={params.onclick}>{params.btnMsg}</Button>
+                </Col>
+            </Row>
+        </div>
     )
 }
